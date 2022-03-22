@@ -1,0 +1,92 @@
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    transition: all 1s;
+    height: 2000px;
+}
+
+.bgcolor--blue {
+    background-color: lightblue;
+}
+
+.bgcolor--gray {
+    background-color: lightgray;
+}
+
+.btns {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+}
+
+.btns .container {
+    position: relative;
+    width: 900px;
+    padding: 30px;
+    background-color: transparent;
+    transition: 0.3s;
+    margin: auto;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.btns .container.bgshow {
+    padding: 20px;
+    border-color: #9accd9;
+}
+
+.bg__img {
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    background: url('bg.jpg');
+    transition: all 1s;
+    opacity: 0;
+    background-repeat: no-repeat;
+}
+
+.bg__img--show {
+    opacity: 1;
+}
+
+.btns__menu button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #194035;
+    border: 2px solid #4D8C7A;
+    width: 200px;
+    height: 40px;
+    border-radius: 6px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.btns__menu button:hover {
+    background-color: #9accd9;
+    border: 2px solid #4D858C;
+}
+
+.btns__toggle-btn {
+    position: absolute;
+    top: 40px;
+    right: 32px;
+    font-size: 24px;
+    color: #194035;
+    transition: 0.3s;
+    display: none;
+  }
+  .btns__toggle-btn.bgshow {
+    top: 32px;
+    width: 20px;
+    height: 20px;
+  }
